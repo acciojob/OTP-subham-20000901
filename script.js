@@ -2,7 +2,7 @@
 
 let codes = document.querySelectorAll(".code");
 
-codes.forEach((code,index)) => {
+codes.forEach((code,index) => {
 	code.addEventListener("input",function(){
 		if(code.innerText.length > 1 ){
 			code.innerText = code.innerText[0];
@@ -18,4 +18,4 @@ codes.forEach((code,index)) => {
 			codes[index-1].focus();
 		}
 	});
-}
+});
